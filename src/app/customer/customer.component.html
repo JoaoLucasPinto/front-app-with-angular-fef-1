@@ -126,7 +126,7 @@
                     <input type="password" matInput placeholder="Digite sua senha"
                         [(ngModel)]="customer.passwordCustomer" name="passwordCustomer" required />
                 </mat-form-field>
-                <button (click)="saveCustomer();" mat-raised-button color="primary">Salvar</button>
+                <button type="button" mat-raised-button color="primary" (click)="saveCustomer();tabGroup.selectedIndex = 0">Salvar</button>
                 <br />
                 <div role="alert" *ngIf="success == true">
                     <span>Cliente {{ customer.firstNameCustomer }} salvo com sucesso!</span>
